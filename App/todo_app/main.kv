@@ -1,0 +1,314 @@
+<CustomRelativeLayout>:
+
+<CustomBoxLayout>:
+
+<CreateIconBox>:
+
+<MainButtonsBox>:
+
+<CreateButtonsBox>:
+
+<EditButtonsBox>:
+
+<MultiExpressionButton>:
+
+<MultiExpressionLabel>:
+
+<CustomButton>:
+
+<CustomLabel>:
+
+<CompletedIcon>:
+
+<PinnedIcon>:
+
+<CreateIcon>:
+
+<BackIcon>:
+
+<SaveIcon>:
+
+<MainWindow>:
+    scroll_view: scroll_view
+    todos_grid_container: todos_grid_container
+    buttons_box: buttons_box
+    create_button_box: create_button_box
+
+    FloatLayout:
+
+        BoxLayout:
+            orientation: "vertical"
+            size_hint_y: None
+            height: root.height 
+            width: root.width
+
+            ScrollView:
+                id: scroll_view
+                do_scroll_x: False
+                do_scroll_y: True
+                size_hint_x: 1
+                size_hint_y: None
+                height: root.height - buttons_box.height
+
+                GridLayout:
+                    id: todos_grid_container
+                    orientation: "lr-bt"
+                    cols: 1
+                    size_hint_x: 1
+                    size_hint_y: None
+                    height: root.height + 1
+
+                    CustomBoxLayout:
+                        id_number: 1
+
+                        CustomButton:
+                            root: root
+                            id_number: 1
+
+                        CustomRelativeLayout:
+                            id_number: 1
+                            width: root.width * 0.82
+                            height: root.height
+                            
+                            CustomLabel:
+                                id_number: 1
+                                pos_hint: {"x": 0, "y": 0}
+                                size_hint: 1, 1
+                                text_size: self.size
+                                halign: "left"
+                                valign: "middle"
+                                padding_x: 15
+
+                    CustomBoxLayout:
+                        root: root
+                        id_number: 2
+
+                        CustomButton:
+                            id_number: 2
+
+                        CustomRelativeLayout:
+                            id_number: 2
+                            width: root.width * 0.82
+                            height: root.height
+                            
+                            CustomLabel:
+                                id_number: 2
+                                pos_hint: {"x": 0, "y": 0}
+                                size_hint: 1, 1
+                                text_size: self.size
+                                halign: "left"
+                                valign: "middle"
+                                padding_x: 15
+                            
+                    CustomBoxLayout:
+                        id_number: 3
+
+                        CustomButton:
+                            root: root
+                            id_number: 3
+
+                        CustomRelativeLayout:
+                            id_number: 3
+                            width: root.width * 0.82
+                            height: root.height
+                            
+                            CustomLabel:
+                                id_number: 3
+                                pos_hint: {"x": 0, "y": 0}
+                                size_hint: 1, 1
+                                text_size: self.size
+                                halign: "left"
+                                valign: "middle"
+                                padding_x: 15
+
+                    CustomBoxLayout:
+                        id_number: 4
+
+                        CustomButton:
+                            root: root
+                            id_number: 4
+                        
+                        CustomRelativeLayout:
+                            id_number: 4
+                            width: root.width * 0.82
+                            height: root.height
+                            
+                            CustomLabel:
+                                id_number: 4
+                                pos_hint: {"x": 0, "y": 0}
+                                size_hint: 1, 1
+                                text_size: self.size
+                                halign: "left"
+                                valign: "middle"
+                                padding_x: 15
+
+                    CustomBoxLayout:
+                        id_number: 5
+
+                        CustomButton:
+                            root: root
+                            id_number: 5
+                        
+                        CustomRelativeLayout:
+                            id_number: 5
+                            width: root.width * 0.82
+                            height: root.height
+                            
+                            CustomLabel:
+                                id_number: 5
+                                pos_hint: {"x": 0, "y": 0}
+                                size_hint: 1, 1
+                                text_size: self.size
+                                halign: "left"
+                                valign: "middle"
+                                padding_x: 15
+                    
+                    CustomBoxLayout:
+                        id_number: 6
+
+                        CustomButton:
+                            root: root
+                            id_number: 6
+                        
+                        CustomRelativeLayout:
+                            id_number: 6
+                            width: root.width * 0.82
+                            height: root.height
+                            
+                            CustomLabel:
+                                id_number: 6
+                                pos_hint: {"x": 0, "y": 0}
+                                size_hint: 1, 1
+                                text_size: self.size
+                                halign: "left"
+                                valign: "middle"
+                                padding_x: 15
+                    
+                    CustomBoxLayout:
+                        id_number: 7
+
+                        CustomButton:
+                            root: root
+                            id_number: 7
+                        
+                        CustomRelativeLayout:
+                            id_number: 7
+                            width: root.width * 0.82
+                            height: root.height
+                            
+                            CustomLabel:
+                                id_number: 7
+                                pos_hint: {"x": 0, "y": 0}
+                                size_hint: 1, 1
+                                text_size: self.size
+                                halign: "left"
+                                valign: "middle"
+                                padding_x: 15
+                    
+                    CustomBoxLayout:
+                        id_number: 8
+
+                        CustomButton:
+                            id_number: 8
+                        
+                        CustomRelativeLayout:
+                            id_number: 8
+                            width: root.width * 0.82
+                            height: root.height
+                            
+                            CustomLabel:
+                                id_number: 8
+                                pos_hint: {"x": 0, "y": 0}
+                                size_hint: 1, 1
+                                text_size: self.size
+                                halign: "left"
+                                valign: "middle"
+                                padding_x: 15
+                               
+            MainButtonsBox:
+                rows: 1
+                id: buttons_box
+                pos_hint: {"x": 0, "y": 0}
+                size_hint: 0, None
+                height: 0
+        
+        CreateIconBox:
+            rows: 1
+            id: create_button_box
+            pos_hint: {"x": 0.75, "y": 0.25}
+            size_hint_x: None
+            size_hint_y: None
+            width: (root.width ** 2 + root.height ** 2) / 13 ** 4
+            height: self.width
+                  
+
+<CreateToDoWindow>:
+    buttons_box: buttons_box
+    todo_input: todo_input
+
+    BoxLayout:
+        orientation: "vertical"
+        
+        CreateButtonsBox:
+            id: buttons_box
+            size_hint: 1, 0.1
+            
+            BackIcon:
+                pos_hint: {"x": 0.05, "y": 0}
+                size_hint: 0.1, 1
+                on_release:
+                    root.cancel()
+
+            SaveIcon:
+                pos_hint: {"x": 0.85, "y": 0}
+                size_hint: 0.1, 1
+                on_release:
+                    root.add_todo()
+                
+        TextInput:
+            id: todo_input
+            font_size: (root.width ** 2 + root.height ** 2) / 17 ** 4
+            text: ""
+            pad: 0.05 * self.parent.width
+            padding: self.pad
+            background_active: ""
+            background_normal: ""
+            hint_text: "Text should be here"
+            input_type: "text"
+            keyboard_suggestions: True
+
+
+<EditToDoWindow>:
+    buttons_box: buttons_box
+    todo_input: todo_input
+
+    BoxLayout:
+        orientation: "vertical"
+        
+        EditButtonsBox:
+            id: buttons_box
+            size_hint: 1, 0.1
+
+            BackIcon:
+                pos_hint: {"x": 0.05, "y": 0}
+                size_hint: 0.1, 1
+                on_release:
+                    root.cancel()
+
+            SaveIcon:
+                pos_hint: {"x": 0.85, "y": 0}
+                size_hint: 0.1, 1
+                on_release:
+                    root.edit_todo()
+
+        TextInput:
+            id: todo_input
+            font_size: (root.width ** 2 + root.height ** 2) / 17 ** 4
+            text: ""
+            pad: 0.05 * self.parent.width
+            padding: self.pad
+            background_active: ""
+            background_normal: ""
+            hint_text: "Text should be here"
+            input_type: "text"
+            keyboard_suggestions: True
